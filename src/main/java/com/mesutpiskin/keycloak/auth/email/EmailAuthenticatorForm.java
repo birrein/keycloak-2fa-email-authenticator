@@ -166,6 +166,7 @@ public class EmailAuthenticatorForm extends AbstractUsernameFormAuthenticator {
 
         Map<String, Object> mailBodyAttributes = new HashMap<>();
         mailBodyAttributes.put("username", user.getUsername());
+        mailBodyAttributes.put("email", user.getEmail());
         mailBodyAttributes.put("code", code);
         mailBodyAttributes.put("ttl", ttl);
 
